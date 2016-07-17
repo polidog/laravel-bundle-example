@@ -1,0 +1,10 @@
+fallback:
+    path: /{path}
+    defaults: { _controller: "polidog_laravel.controller.fallback:fallback" }
+    requirements:
+        path: .*
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
